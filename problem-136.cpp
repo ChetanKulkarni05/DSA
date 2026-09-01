@@ -1,7 +1,11 @@
-class Solution(object):
-    def singleNumber(self, nums):
-        ans = 0
-        for index in nums:
-            ans ^= index
-        return ans
+class Solution {
+public:
+    int singleNumber(vector<int>& nums) {
+        int ans = 0;
+        for(int val : nums){
+            ans = ans^val;
+        }
+        return ans;
         
+    }
+};
